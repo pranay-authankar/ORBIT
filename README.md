@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# ORBIT - School Digital Ecosystem 🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Live Demo:** [https://pranay-authankar.github.io/ORBIT/](https://pranay-authankar.github.io/ORBIT/)
 
-Currently, two official plugins are available:
+**ORBIT** is a comprehensive, next-generation digital ecosystem designed to bridge the gap between Students, Teachers, and Parents. It replaces fragmented tools (like WhatsApp, scattered emails, and paper notices) with a single, secure, and professional platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Built with Google Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project powers its core capabilities using a suite of advanced Google tools:
 
-## Expanding the ESLint configuration
+### 1. **Google Gemini 1.5 Flash (AI Integration)** ✨
+The heart of our intelligent features. We utilize the `gemini-1.5-flash` model to provide:
+*   **AI Doubt Solver**: A 24/7 personal tutor for students that answers academic questions instantly and safely.
+*   **Content Moderation**: Automated safety checks on social media posts to ensure a bullying-free environment.
+*   **Teacher Tools**: AI-assisted exam paper generation and performance summaries.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2. **Firebase (Backend & Security)** 🔥
+*   **Authentication**: Secure, role-based login (Student, Teacher, Parent) ensuring data privacy.
+*   **Firestore Database** (In Progress): Real-time data syncing for chat, announcements, and academic records.
+*   **Security Rules**: granular access control preventing unauthorized access to sensitive student data.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 3. **Google AI Studio** 🧪
+Used for prompt engineering and testing the Gemini models to ensure the AI behaves strictly as an educational assistant and safety moderator.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 4. **Built with Antigravity** 🤖
+This entire application was architected and built using **Antigravity**, Google's advanced agentic coding assistant. Antigravity handled:
+*   **Full Stack Development**: Writing complex React/TypeScript code and Tailwind CSS styling.
+*   **Project Management**: Planning tasks, verifying builds, and managing git history.
+*   **Deployment**: Automating the deployment process to GitHub Pages.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌟 Key Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🎓 **Student Dashboard**
+*   **Centralized View**: Homework, exam schedules, and results in one place.
+*   **School Groups**: A WhatsApp-style secure chat for class discussions.
+*   **Safe Social Feed**: An Instagram-like feed for school events, moderated by AI.
+*   **AI Doubt Solver**: Instant help with studies using Gemini AI.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 👩‍🏫 **Teacher Dashboard**
+*   **Class Management**: Tools to post homework, announcements, and schedule exams.
+*   **AI Assistants**: Generate questions and summarize student performance.
+*   **Moderation**: Oversee student interactions and manage digital safety.
+
+### 👨‍👩‍👧 **Parent Dashboard**
+*   **Child Progress**: Real-time view of attendance, grades, and homework status.
+*   **Communication**: Read-only access to official school announcements (no noise).
+*   **Safety Assurance**: Visibility into the safe, moderated environment their child is using.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Frontend**: React 19, TypeScript, Vite
+*   **Styling**: Tailwind CSS 4, Lucide React (Icons)
+*   **AI**: Google Gemini API (`@google/generative-ai`)
+*   **Routing**: React Router DOM 7
+*   **Deployment**: GitHub Pages
+
+---
+
+## 📦 Installation
+
+To run this project locally:
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/pranay-authankar/ORBIT.git
+    cd ORBIT
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+*Built with ❤️ and AI for the Future of Education.*
